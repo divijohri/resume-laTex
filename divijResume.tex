@@ -19,7 +19,10 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\documentclass[letterpaper]{deedy-resume-openfont} % Use US Letter paper, change to a4paper for A4 
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\definecolor{GREEN}{RGB}{13, 112, 6}
 
 \begin{document}
 
@@ -29,9 +32,9 @@
 
 \lastupdated % Print the Last Updated text at the top right
 
-\namesection{Divij}{Ohri}{ % Your name
+\namesection{\textcolor{GREEN}{Divij}}{Ohri}{ % Your name
 \urlstyle{same}\url{http://divijohri.com} \\ % Your website, LinkedIn profile or other web address
-\href{mailto:divijohri@ucla.edu}{divijohri@ucla.edu} | 424.464.0851 % Your contact information
+\href{mailto:divijohri28@gmail.com}{\faEnvelope \hspace{.5mm} divijohri28@gmail.com} | \faPhone \hspace{.5mm} 424.464.0851 % Your contact information
 }
 
 %----------------------------------------------------------------------------------------
@@ -44,96 +47,94 @@
 % Education
 %------------------------------------------------
 
-\section{Education} 
+\section{\textcolor{GREEN}{Education}} 
 
-\subsection{UCLA}
+\subsection{University of California, \newline Los Angeles}
 
-\descript{BS in Computer Science}
-\location{Expected May 2020 | LA, CA}
+\descript{B.S., Computer Science}
+\location{\faGraduationCap \hspace{.5mm} Expected May 2020}
 Henry Samueli School of Engineering\\
-\location{ GPA: 3.5s / 4.0 }
+\location{ GPA: 3.5 / 4.0 }
 
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-\subsection{Delhi Public School}
-
-\location{Grad. May 2016 | Gurgaon, India}
-Physics, Math, Econ, Chemistry, English\\
-\location{ Grade 12: 95/100 \\
-Grade 9 \& 10: GPA 10/10 }
-
-\sectionspace % Some whitespace after the section
+\sectionsep % Some whitespace after the section
 
 %------------------------------------------------
 % Links
 %------------------------------------------------
 
-\section{Links} 
+\section{\textcolor{GREEN}{Links}} 
 
-LinkedIn:// \href{https://www.linkedin.com/in/divijohri}{\bf divijohri} \\
-Github:// \href{https://github.com/divijohri}{\bf divijohri} \\
-Devpost:// \href{https://devpost.com/divijohri98}{\bf divijohri98} \\
-Behance:// \href{https://www.behance.net/divijohri}{\bf divijohri} \\
 
-\sectionspace % Some whitespace after the section
+\faLinkedin \hspace{.5mm} \href{https://www.linkedin.com/in/divijohri}{\bf linkedin.com/in/divijohri} \\
+\faGithub \hspace{.5mm} \href{https://github.com/divijohri}{\bf github.com/divijohri} \\
+\faUser \hspace{.5mm} \href{https://devpost.com/divijohri98}{\bf devpost.com/divijohri98} \\
+
+\sectionsep % Some whitespace after the section
 
 %------------------------------------------------
 % Coursework
 %------------------------------------------------
 
-\section{Coursework}
+\section{\textcolor{GREEN}{Coursework}}
 
-\subsection{First Year}
+\subsection{Undergraduate}
 
 Data Structures and Algorithms \\
-Introduction to C++ \\
-Internet of Things Lab\\
-Physics for Scientists \& Engineers\\
-Multivariable Calculus \\
-Linear Algebra and Applications \\
+Multivariable Calculus\\
+Linear Algebra\\
+Internet of Things\\
+Computer Organization\\
+Logic Design of Digital Systems\\
+Operating Systems\\
+Algorithms and Complexity\\
+Software Construction Lab\\
 
-\sectionspace % Some whitespace after the section
+\sectionsep % Some whitespace after the section
 
 %------------------------------------------------
 % Skills
 %------------------------------------------------
 
-\section{Skills}
-
-\subsection{Programming}
-
-C++ \textbullet{} CSS \textbullet{} HTML \textbullet{} LabVIEW \\
-LaTex \textbullet{} JavaScript (Familiar) \\
-
-\sectionspace % Some whitespace after the section
-
+\section{\textcolor{GREEN}{Skills}}
+\subsection{Languages}
+C++/C \textbullet{} JavaScript \textbullet{} Golang \textbullet{} Shell \textbullet{} \\
+Python \\
+\sectionsep
+\subsection{Android}
+Java \textbullet{} XML \textbullet{} Android Studio \\
+\sectionsep
+\subsection{UI/ UX}
+CSS/HTML \textbullet{} Node.js \textbullet{} jQuery \\
+\sectionsep
+\subsection{Databases}
+CouchDB \textbullet{} YAML
+\sectionsep % Some whitespace after the section
 \subsection{Design}
-Illustrator \textbullet{} Photoshop \textbullet{} Gimp \\
-Final Cut Pro \textbullet{} After Effects (Familiar) \\
+LaTex \textbullet{} Illustrator \textbullet{} Photoshop \textbullet{} Sketch \textbullet{}\\
+Gimp\\
 
-\sectionspace % Some whitespace after the section
+\sectionsep % Some whitespace after the section
 
 %------------------------------------------------
-% Test Scores
+% Awards
 %------------------------------------------------
 
-\section{Test Scores}
+\section{\textcolor{GREEN}{Awards}}
 
-\subsection{SAT}
-\location{ Reasoning: 1500/1600 \\
-Math Lvl 2:\hspace{0.07in}800/800 \\
-Physics: \hspace{0.15in} 800/800}
+Best Local Hack, Mhacks 8 \textbullet{} State Winner, Indian Robotics Olympiad 2016 \textbullet{} Gold Medal for Academic Excellence, DPS\\
 
-\sectionspace % Some whitespace after the section
 
-\subsection{AP}
-\location{ Calculus BC:\hspace{0.11in} 5/5 \\
-Physics E\&M:\hspace{0.1in}5/5 \\
-Physics Mech: 5/5 }
+\sectionsep % Some whitespace after the section
 
-\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Organization
+%------------------------------------------------
+
+\section{\textcolor{GREEN}{Organizations}}
+Bruin Model UN \textbullet{} ACM \textbullet{} Bruin Entrepreneurs \\
+
+
 %----------------------------------------------------------------------------------------
 
 \end{minipage} % The end of the left column
@@ -149,85 +150,76 @@ Physics Mech: 5/5 }
 % Experience
 %------------------------------------------------
 
-\section{Projects}
+\section{\textcolor{GREEN}{Experience}}
+
+\runsubsection{OPSVEDA}
+\descript{| Software Engineering Intern - Blockchain}
+\location{Summer 2017 | San Jose, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Prototyped and designed a Blockchain network for inter-organizational asset handling, using the Hyperledger Fabric v1 framework;
+\item Wrote smart-contract functions in Golang to develop a unit-based system for commodity exchange;
+\item Created invoking/ querying scripts in nodeJs to interact with the Blockchain data structures;
+\item Used Shell scripts to document instructions for Blockchain artifact launches;
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+\runsubsection{CISO Cyber Securities}
+\descript{| Software Engineering Intern - UI/UX}
+\location{June 2017 | New Delhi, India}
+\begin{tightemize}
+\item Worked with the Mobile application team on DigiProctor, an iOS/Android app for online test taking in schools
+\item Created AJAX dependent loading bar on the Ionic framework for landing page
+\item Worked with CSS transitions using AOS to create an interactive UI; learnt about User Centric Design; designed customized vectors with Illustrator/ PS 
+\end{tightemize}
+
+\sectionsep % Some whitespace after the section
+
+%------------------------------------------------
+% Projects
+%------------------------------------------------
+
+\section{\textcolor{GREEN}{Projects}}
 
 \runsubsection{Augry}
-\descript{| Co-Founder \& Lead UI/UX Design}
-\location{October 2016 - Present | Detroit, MI}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
+\descript{| Python Flask, CSS/ HTML}
+\location{October 2016 | Detroit, MI}
+\begin{tightemize}
 \item Created a web-platform, hosted on Azure, which made travel safer for Detroit residents.
 \item Visualized past crime data, created an algorithm to plot variable 'safe' routes for users using Google Maps API.
 \item Enabled in-app interaction with Facebook friends to make “travel buddies”; Winner of 'Best Local Hack' award at Mhacks 8.
-\end{tightitemize}
+\end{tightemize}
 
-\sectionspace % Some whitespace after the section
+\sectionsep % Some whitespace after the section
 
 \runsubsection{EV3 Mechantronic Bot}
 \descript{| Team Leader \& Programmer}
 \location{July 2015 – Nov 2015 | New Delhi, India}
-\begin{tightitemize}
+\begin{tightemize}
 \item Created a color sensing robot that sorted a random arrangement of colored blocks and place them on the respective colored platforms.
 \item Programmed the robotic components using LabVIEW, which included line sensing, gyros and the robotic arm.
 \item Won the New Delhi Regional Championship and ranked 4/50 among regional winners.
-\end{tightitemize}
+\end{tightemize}
 
-\sectionspace % Some whitespace after the section
+\sectionsep % Some whitespace after the section
 
-%------------------------------------------------
-% Experience
-%------------------------------------------------
+\runsubsection{EV3 Mechantronic Bot}
+\descript{| Team Leader \& Programmer}
+\location{July 2015 – Nov 2015 | New Delhi, India}
+\begin{tightemize}
+\item Created a color sensing robot that sorted a random arrangement of colored blocks and place them on the respective colored platforms.
+\item Programmed the robotic components using LabVIEW, which included line sensing, gyros and the robotic arm.
+\item Won the New Delhi Regional Championship and ranked 4/50 among regional winners.
+\end{tightemize}
+\sectionsep % Some whitespace after the section
 
-\section{Experience}
-
-\runsubsection{Stadtwerke}
-\descript{| High School Intern}
-
-\location{May 2014 | Schwäbisch Hall, Germany}
-Researched and learned about working of solar mirror reflectors in a solar power facility; Evaluated technical drawings of household semiconducter panels; conducted maintenance of technical systems.
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-% Leadership
-%------------------------------------------------
-
-\section{Leadership}
-
-\runsubsection{Vice Head Boy}
-\descript{| Student Council}
-
-\location{May 2014 - May 2015 | DPS Gurgaon}
-Led the students’ council and trained prefects; Organized events \& ceremonies; Designed the school’s first yearbook; Worked on increasing student-teacher interaction; Represented school clubs and organizations in inter-school events.
-
-\sectionspace % Some whitespace after the section
-
-\runsubsection{Head, Design and Graphics}
-\descript{| School Computer Club}
-\location{May 2014 - May 2016 | DPS Gurgaon}
-Led a team of 15 students; Conceptualized school MUN website (utopiamun.com); Designed banners, logos, badges, posters and newsletters on Adobe Photoshop and Illustrator; Organized annual school Science fest 'Alpha Node'.
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-% Awards
-%------------------------------------------------
-
-\section{Awards} 
-
-\begin{tabular}{rll}
-2016	 & top 10/400 & Best Local Hack, Venture for America, Mhacks 8\\
-2016	 & 95\textsuperscript{th} percentile & Gold Medal for Academic Brilliance, DPS Gurgaon\\
-2015	 & 4/50 nationally & Regional Champion, Indian Robot Olympiad\\
-2016 	 & National & AP Scholar with Honor Award\\
-2015 	 & International & North India Topper, Trinity Guidhall, Drama, Grade 5\\
-2015	 & National & Bronze Medalist, Pramerica Spirit of Community Awards\\
-2015	 & National & National Merit Scholar Award, CBSE\\
-2014 	 & 90\textsuperscript{th} percentile & National Finalist, Times NIE Science Olympiad \\
-2014 	 & National & Best Parliamentarian, World MUN, New Delhi\\
-\end{tabular}
-
-\sectionspace % Some whitespace after the section
+\runsubsection{EV3 Mechantronic Bot}
+\descript{| Team Leader \& Programmer}
+\location{July 2015 – Nov 2015 | New Delhi, India}
+\begin{tightemize}
+\item Created a color sensing robot that sorted a random arrangement of colored blocks and place them on the respective colored platforms.
+\end{tightemize}
 
 %----------------------------------------------------------------------------------------
 
